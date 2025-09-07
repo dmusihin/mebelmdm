@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кухни на заказ в Городе | Напрямую от фабрики</title>
+    <style>
+        /* Базовые настройки и сброс стилей */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            color: #333;
+        }
+
+        /* Стили для главного экрана (из первой версии) */
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 2rem;
+            background-color: #0088cc;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #546e7a;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+        }
+
+        /* Стили текстового контента (из скриншота) */
+        .content {
+            text-align: left;
+            margin-bottom: 2.5rem;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            color: #333;
+        }
+
+        .highlight {
+            font-weight: 600;
+        }
+
+        .city {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #c3cfe2;
+            margin: 2.2rem 0;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .cta-text {
+            text-align: center;
+            margin-bottom: 1.8rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Стили для кнопки (из первой версии) */
+        .tg-button {
+            display: inline-block;
+            background-color: #0088cc;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+            cursor: pointer;
+            margin: 1.5rem 0;
+        }
+
+        .tg-button:hover {
+            background-color: #006da3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 136, 204, 0.4);
+        }
+
+        .tg-button:active {
+            transform: translateY(0);
+        }
+
+        .tg-icon {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Дополнительный текст после кнопки */
+        .additional-content {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .additional-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">M</div>
+
+            <!-- Заголовок и подзаголовок -->
+            <h1>Кухни на заказ в Городе</h1>
+            <p class="subtitle">Напрямую от фабрики, без посредников</p>
+
+            <!-- Основной текст -->
+            <div class="content">
+                <p>Меня зовут Игорь. Мы с командой делаем<br>
+                кухни <span class="highlight">от 150 000 ₽</span> без накруток. Свое<br>
+                производство в <span class="city">Городе</span></p>
+
+                <p>Те же самые кухни, которые салоны считают вам по 350+,<br>
+                мы делаем за 150-250. Потому что не берем деньги за<br>
+                «воздух», только за материал и работу</p>
+            </div>
+
+            <!-- Разделитель -->
+            <div class="divider"></div>
+
+            <!-- Призыв к действию -->
+            <h2>Не переплачивайте посредникам</h2>
+            <h3>Делаем кухни от 150.000 ₽.</h3>
+            <p class="cta-text">Рассчитайте точную стоимость вашей будущей кухни, и<br>
+            сравните цены с «гламурными» салонами</p>
+
+            <!-- Кнопка Telegram -->
+            <a href="https://t.me/Mebelexpertbot" class="tg-button" target="_blank">
+                <span class="tg-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM17.894 8.221L16.151 17.684C16.044 18.211 15.739 18.347 15.303 18.111L12.568 16.079L11.224 17.351C11.071 17.504 10.943 17.632 10.647 17.632L10.869 14.857L16.216 9.943C16.466 9.718 16.159 9.592 15.824 9.817L9.191 14.129L6.474 13.259C5.961 13.099 5.947 12.751 6.586 12.5L17.143 8.039C17.572 7.87 17.939 8.118 17.894 8.221Z" fill="white"/>
+                    </svg>
+                </span>
+                Рассчитать стоимость в Telegram
+            </a>
+
+            <!-- Дополнительный текст -->
+            <div class="additional-content">
+                <p>У нас нет модного шоурума и армии продавцов с натянутыми улыбками. Вместо этого -<br>
+                свой цех и мастера, которые <span class="highlight">15 лет делают кухни.</span></p>
+
+                <p>Наши кухни мы иногда выкладываем в Telegram, там <span class="highlight">можете посмотреть фотографии.</span><br>
+                Никакой рекламы и маркетологов. Зачем? Люди за нашими кухнями и так идут. Без<br>
+                рекламы.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
